@@ -16,6 +16,10 @@ public class DateCheckerTest {
         assertEquals(expectedMessage, actualMessage);
     }
     @Test
+    public void testForJanuary(){
+        assertTrue(dateChecker.has31Days(DateChecker.Month.JANUARY));
+    }
+    @Test
     public void testForFebruary(){
         assertFalse(dateChecker.has31Days(DateChecker.Month.FEBRUARY));
     }
