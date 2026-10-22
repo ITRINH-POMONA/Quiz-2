@@ -17,4 +17,10 @@ public class CalculatorTest {
         int actual = calc.subtract(2, 1);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testMultiply(){
+        int expected = 4;
+        int actual = calc.multiply(2, 2);
+        assertEquals(expected, actual);
+    }
 }
