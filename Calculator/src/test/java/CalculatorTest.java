@@ -30,6 +30,12 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
     @Test
+    public void testMultiply2(){
+        int expected = 0;
+        int actual = calc.multiply(2, 0);
+        assertEquals(expected, actual);
+    }
+    @Test
     public void testDivide(){
         int expected = 4;
         int actual = calc.divide(8, 2);
