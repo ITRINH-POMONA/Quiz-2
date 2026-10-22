@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CalculatorTest {
@@ -21,6 +21,12 @@ public class CalculatorTest {
     public void testMultiply(){
         int expected = 4;
         int actual = calc.multiply(2, 2);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testDivide(){
+        int expected = 4;
+        int actual = calc.divide(8, 2);
         assertEquals(expected, actual);
     }
 }

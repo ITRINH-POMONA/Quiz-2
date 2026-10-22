@@ -9,6 +9,6 @@ public class Calculator {
         return x*y;
     }
     public int divide(int x, int y){
-        return 0;
+        return x/y;
     }
 }
