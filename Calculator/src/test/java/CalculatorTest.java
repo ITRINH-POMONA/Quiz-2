@@ -11,4 +11,10 @@ public class CalculatorTest {
         int actual = calc.sum(1, 2);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testSubtraction(){
+        int expected = 1;
+        int actual = calc.subtract(2, 1);
+        assertEquals(expected, actual);
+    }
 }
