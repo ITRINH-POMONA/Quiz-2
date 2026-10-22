@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
+import java.util.Calendar;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DateCheckerTest {
@@ -26,5 +28,9 @@ public class DateCheckerTest {
         String expectedMessage = "Invalid Month.";
         String actualMessage = exception.getMessage();
         assertEquals(expectedMessage, actualMessage);
+    }
+    @Test
+    public void testForFebruary(){
+        assertFalse(dateChecker.has31Days(DateChecker.Month.FEBRUARY));
     }
 }
