@@ -18,6 +18,12 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
     @Test
+    public void testSubtraction2(){
+        int expected = -2;
+        int actual = calc.subtract(2, 4);
+        assertEquals(expected, actual);
+    }
+    @Test
     public void testMultiply(){
         int expected = 4;
         int actual = calc.multiply(2, 2);
