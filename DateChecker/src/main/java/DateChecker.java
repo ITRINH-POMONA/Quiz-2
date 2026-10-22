@@ -14,4 +14,8 @@ public class DateChecker {
         NOVEMBER,
         DECEMBER
     }
+
+    public boolean has31Days(Month month){
+        return false;
+    }
 }
