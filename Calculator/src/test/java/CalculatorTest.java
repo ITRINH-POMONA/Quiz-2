@@ -33,4 +33,11 @@ public class CalculatorTest {
     public void testIsEven(){
         assertTrue(calc.isEven(2));
     }
+    @Test
+    public void testDivideByZero(){
+        Exception exception = assertThrows(IllegalAccessException.class, () -> calc.divide(2, 0));
+        String expectedMessage = "Ints can NOT be divided by zero";
+        String actualMessage = exception.getMessage();
+        assertEquals(expectedMessage, actualMessage);
+    }
 }
