@@ -40,4 +40,10 @@ public class CalculatorTest {
         String actualMessage = exception.getMessage();
         assertEquals(expectedMessage, actualMessage);
     }
+    @Test
+    public void testNegativeMultiplication(){
+        int expected = -4;
+        int actual = calc.multiply(2, -2);
+        assertEquals(expected, actual);
+    }
 }
