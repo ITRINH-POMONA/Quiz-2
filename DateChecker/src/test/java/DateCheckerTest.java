@@ -19,7 +19,7 @@ public class DateCheckerTest {
     public void testNotHas31Days(DateChecker.Month month){
         assertFalse(dateChecker.has31Days(month));
     }
-    
+
     @Test
     public void testForNull(){
         Exception exception = assertThrows(IllegalArgumentException.class, () -> dateChecker.has31Days(null));
