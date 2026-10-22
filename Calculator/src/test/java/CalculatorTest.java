@@ -53,6 +53,10 @@ public class CalculatorTest {
         assertEquals(expectedMessage, actualMessage);
     }
     @Test
+    public void testIsEven2(){
+        assertFalse(calc.isEven(1));
+    }
+    @Test
     public void testNegativeMultiplication(){
         int expected = -4;
         int actual = calc.multiply(2, -2);
