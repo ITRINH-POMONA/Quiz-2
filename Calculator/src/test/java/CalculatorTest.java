@@ -29,4 +29,8 @@ public class CalculatorTest {
         int actual = calc.divide(8, 2);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testIsEven(){
+        assertTrue(calc.isEven(2));
+    }
 }
